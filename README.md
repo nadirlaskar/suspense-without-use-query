@@ -2,7 +2,7 @@
 
 This demo demonstrate how Suspense works under the hood in React without using external libraries like react-query, we can create a basic project that simulates data fetching, manages loading states, and suspends rendering while waiting for the data to arrive.
 
-We'll use the Suspense component with React.lazy and a custom data-fetching mechanism. Below is a simple example to illustrate how this works.
+We'll use the Suspense component with React.lazy and a custom data-fetching mechanism. this project is a simple example to illustrate how this works.
 
 Project Breakdown:
 
