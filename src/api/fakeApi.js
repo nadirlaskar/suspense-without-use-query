@@ -6,6 +6,6 @@ export const fetchData = () => {
       resolve({
         data: `on ${date.toLocaleDateString()} at ${date.toLocaleTimeString()}`,
       });
-    }, 7000); // Simulates a 2-second delay
+    }, 2000); // Simulates a 2-second delay
   });
 };
