@@ -1,9 +1,11 @@
-// useSuspenseData.js
-import { createSuspender } from "../utils/createSuspender";
-import { fetchData } from "../api/fakeApi";
+import React, { useContext } from "react";
+import {
+  createSuspender,
+  supenderCacheContext,
+} from "../utils/createSuspender";
 
-const dataResource = createSuspender(fetchData());
-
-export function useSuspenseData() {
-  return dataResource.read();
+export function useSuspenseData(options) {
+  const cacheContext = useContext(supenderCacheContext);
+  const suspenderRef = createSuspender(options, cacheContext);
+  return suspenderRef.read();
 }
